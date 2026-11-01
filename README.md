@@ -1,6 +1,6 @@
 # Network Security & Infrastructure Redesign (Cisco Packet Tracer)
 
-I was given a client scenario: Megadodo Publications, a company running across two buildings, was dealing with slow performance, unstable connectivity, and security incidents that had exposed sensitive data, right as they were preparing for a government contract that demanded a secure, reliable network. My job was to work out why, redesign the network to fix it, and prove the redesign actually worked in Cisco Packet Tracer.
+The brief: Megadodo Publications, a company running across two buildings, was dealing with slow performance, unstable connectivity, and security incidents that had exposed sensitive data, right as they were preparing for a government contract that demanded a secure, reliable network. My job was to work out why, redesign the network to fix it, and prove the redesign actually worked in Cisco Packet Tracer.
 
 ## What was actually wrong
 
@@ -60,4 +60,4 @@ Cisco Packet Tracer, Cisco IOS (2960 switches, 2911 router), VLANs, 802.1Q trunk
 
 ## Disclaimer
 
-Megadodo Publications is a fictional client scenario used for the coursework brief. It doesn't describe a real organisation's network.
+Megadodo Publications is a fictional client used for the coursework brief, not a real company. The network, incidents and figures above are all part of that scenario.
