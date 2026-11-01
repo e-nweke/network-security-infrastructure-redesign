@@ -1,8 +1,8 @@
 # Network Security & Infrastructure Redesign (Cisco Packet Tracer)
 
-The brief: Megadodo Publications, a company running across two buildings, was dealing with slow performance, unstable connectivity, and security incidents that had exposed sensitive data, right as they were preparing for a government contract that demanded a secure, reliable network. My job was to work out why, redesign the network to fix it, and prove the redesign actually worked in Cisco Packet Tracer.
+The brief: Megadodo Publications, a company running across two buildings, was dealing with slow performance, unstable connectivity, and security incidents that had exposed sensitive data, right as they were preparing for a government contract that demanded a secure, reliable network. My job was to work out why, redesign the network to fix it, and prove the redesign worked in Cisco Packet Tracer.
 
-## What was actually wrong
+## What was wrong
 
 The existing network had no real segmentation. Every department sat in the same oversized `/16` address space, which meant one huge broadcast domain, poor traffic control, and basically no security separation between teams like Finance, Legal and general staff. That's the kind of design that looks fine on day one and then quietly gets worse as the company grows.
 
@@ -27,19 +27,19 @@ The existing network had no real segmentation. Every department sat in the same 
 
 ## Policy changes I recommended
 
-The existing security policy didn't really say anything useful about segmentation, user access or device security, so I proposed:
+The existing security policy said little of use about segmentation, user access or device security, so I proposed:
 - Role-based access control, enforced MFA, and real password policies, especially for anything touching the server VLAN
 - Admin accounts locked down individually, no more shared credentials
 - A standard device baseline (OS updates, firewall, approved antivirus) for every company device
 - Contractor/visitor devices restricted entirely to the isolated guest VLAN
 
-## Proving it actually works
+## Proving it works
 
 Everything above was built and tested in Packet Tracer, not just described on paper. I verified:
 - VLANs were correctly configured on the core switch
-- Inter-VLAN routing actually worked between authorised subnets (ping tests)
+- Inter-VLAN routing worked between authorised subnets (ping tests)
 - The inter-building trunk was carrying the right VLANs
-- The ACLs were genuinely blocking what they were supposed to block
+- The ACLs blocked exactly what they were meant to block
 
 ![VLAN configuration on the core switch](./figures/figB_vlan_config.jpg)
 ![Inter-VLAN routing verification](./figures/figC_interVLAN_routing.jpg)
