@@ -60,4 +60,4 @@ Cisco Packet Tracer, Cisco IOS (2960 switches, 2911 router), VLANs, 802.1Q trunk
 
 ## Disclaimer
 
-Megadodo Publications is a fictional client used for the coursework brief, not a real company. The network, incidents and figures above are all part of that scenario.
+Megadodo Publications is a fictional client, not a real company. The network, incidents and figures above are all part of that scenario.
